@@ -71,7 +71,6 @@ public class ArrayBasic {
         System.out.println(Arrays.toString(sArr));
         System.out.println(bArr.length);
 
-
     }
 
     static int[] getNumbers() {
