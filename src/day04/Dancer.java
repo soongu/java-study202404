@@ -55,5 +55,11 @@ public class Dancer {
         genre = "케이팝";
         danceLevel = 2;
     }
+    Dancer(String dName, String cName, String gn) {
+        dancerName = dName;
+        crewName = cName;
+        genre = gn;
+        danceLevel = 1;
+    }
 
 }
