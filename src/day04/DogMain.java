@@ -4,6 +4,13 @@ public class DogMain {
 
     public static void main(String[] args) {
 
+        /*
+            const choco = {
+                dogName: '초코',
+                age: 2,
+                injection: true
+            };
+         */
         Dog choco = new Dog("초코");
         Dog poppy = new Dog("뽀삐");
 
