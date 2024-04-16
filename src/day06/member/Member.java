@@ -1,5 +1,7 @@
 package day06.member;
 
+import util.SimpleInput;
+
 import java.time.LocalDate;
 
 // 역할: 회원 1명의 정보를 가지고 있어야 한다.
