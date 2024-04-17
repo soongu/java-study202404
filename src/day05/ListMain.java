@@ -20,7 +20,6 @@ public class ListMain {
         StringList foods = new StringList();
         StringList userNames = new StringList();
 
-
         // 배열 내부 데이터 수 확인
         System.out.println(userNames.size());
 
