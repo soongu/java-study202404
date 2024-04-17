@@ -2,7 +2,7 @@ package day06.member;
 
 public class MemberList {
 
-    Member[] mArr;
+    private Member[] mArr;
 
     MemberList() {
         this.mArr = new Member[0];
@@ -37,7 +37,7 @@ public class MemberList {
     }
 
     // 맨 끝 제거
-    Member pop() {
+    private Member pop() {
         // 맨 끝 회원 백업
         Member lastMember = mArr[mArr.length - 1];
         Member[] temp = new Member[mArr.length - 1];
@@ -49,7 +49,7 @@ public class MemberList {
     }
 
     // 회원 정보 삭제
-    Member remove(int index) {
+    public Member remove(int index) {
         // 삭제 대상 백업
         Member removedMember = mArr[index];
         for (int i = index; i < mArr.length - 1; i++) {
@@ -58,6 +58,7 @@ public class MemberList {
         pop();
         return removedMember;
     }
+
     Member remove(Member deleteMember) {
         int index = findIndex(deleteMember.email);
         return remove(index);

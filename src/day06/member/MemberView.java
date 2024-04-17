@@ -141,6 +141,8 @@ public class MemberView {
 
     // 회원 복구에 관련한 입출력 처리
     public void restoreMember() {
+
+
         String inputEmail = si.input("# 복구하실 회원의 이메일을 입력하세요.\n>> ");
 
         // 이메일이 일치하는 회원이 복구리스트에 있는지 조회
