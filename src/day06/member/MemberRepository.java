@@ -1,7 +1,5 @@
 package day06.member;
 
-import java.util.Arrays;
-
 // 역할: 회원 배열을 관리하는 역할 - 회원 데이터 저장소
 public class MemberRepository {
 
