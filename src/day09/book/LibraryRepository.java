@@ -49,6 +49,11 @@ public class LibraryRepository {
      */
     public RentStatus rentBook(int bookNum) {
 
+        // 책 번호가 범위안의 값인지 검증
+        if (bookNum < 1 || bookNum > bookList.size() - 1) {
+            throw new IllegalArgumentException("invalid book number!");
+        }
+
         // 1. 책번호에 해당하는 책 정보 가져오기
         Book wishBook = bookList.get(bookNum - 1);
         // 2. 이 책을 대여할 수 있는지 검증

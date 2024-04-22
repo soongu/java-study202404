@@ -87,7 +87,13 @@ public class LibraryView {
         displayAllBooks();
         String bookNum = input("- 대여할 도서 번호 입력: ");
         // 저장소에다가 대여가능한지 여부 검증
-        RentStatus status = repository.rentBook(Integer.parseInt(bookNum));
+        RentStatus status = null;
+        try {
+            status = repository.rentBook(Integer.parseInt(bookNum));
+        } catch (IllegalArgumentException e) {
+            System.out.println("# 유효한 책 번호가 아닙니다.");
+            return;
+        }
 
         if (status == RentStatus.RENT_SUCCESS_WITH_COUPON) {
             System.out.println("# 성공적으로 요리책이 쿠폰발급과 함께 대여되었습니다.");
