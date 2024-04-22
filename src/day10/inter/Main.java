@@ -9,5 +9,7 @@ public class Main {
         SmartPhone galaxy = new Galaxy();
         SmartPhone iPhone = new IPhone();
 
+        iPhone.information();
+
     }
 }
