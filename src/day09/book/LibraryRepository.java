@@ -46,6 +46,7 @@ public class LibraryRepository {
      * 주어진 책 번호에 맞는 책이 대여 가능한지에 대한 상태상수를 리턴
      * @param bookNum - 주어진 책 번호
      * @return - 대여 가능 상태를 반환
+     * @throws IllegalArgumentException - 주어진 도서 번호가 유효한 범위안의 값이 아닌경우
      */
     public RentStatus rentBook(int bookNum) {
 
