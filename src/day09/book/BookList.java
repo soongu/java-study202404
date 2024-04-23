@@ -1,7 +1,9 @@
 package day09.book;
 
 
-public class BookList {
+import java.util.Iterator;
+
+public class BookList implements Iterable {
 
     private Book[] bArr;
 
@@ -56,5 +58,10 @@ public class BookList {
 
     public Book get(int index) {
         return bArr[index];
+    }
+
+    @Override
+    public Iterator iterator() {
+        return null;
     }
 }
