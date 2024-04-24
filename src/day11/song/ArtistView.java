@@ -1,6 +1,5 @@
 package day11.song;
 
-import util.SimpleInput;
 
 import java.util.Set;
 
